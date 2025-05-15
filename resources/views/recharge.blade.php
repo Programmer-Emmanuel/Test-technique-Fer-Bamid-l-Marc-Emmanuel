@@ -10,14 +10,14 @@
     @include('nav')
 
     <div class="max-w-lg mx-auto mt-10 bg-white p-8 rounded-xl shadow-lg">
-        <h2 class="text-2xl font-bold text-green-600 text-center mb-6">Créer un compte</h2>
+        <h2 class="text-2xl font-bold text-green-600 text-center mb-6">Recharger votre compte</h2>
 
 
 
         <form action="{{ route('recharge') }}" method="POST" class="space-y-5">
             @csrf
             <div>
-                <label for="montant" class="block text-sm font-medium text-gray-700">Montant initial</label>
+                <label for="montant" class="block text-sm font-medium text-gray-700">Montant à recharger</label>
                 <input type="number" name="montant" id="montant" required min="0"
                     class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none">
             </div>
